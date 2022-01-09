@@ -1,0 +1,82 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Testing_baba">
+  <test  name="LoginTest"> 
+    <classes>
+     <class name="test.Testingbaba_LoginTest"/> 
+      </classes>
+      </test> 
+          
+       <test  name="Textbox">
+       <classes>
+      <class name="test.Testingbaba_TextBoxTest"/>    
+    </classes>
+  </test> 
+  
+  <test  name="Checkbox">
+       <classes>
+      <class name="test.Testingbaba_CheckboxTest"/>     
+    </classes>
+  </test> 
+  
+  <test  name="Radiobutton">
+       <classes>
+      <class name="test.Testingbaba_RadiobuttonTest"/> 
+    </classes>
+  </test> 
+  
+  <test  name="WebTable">
+       <classes>
+      <class name="test.Testingbaba_WebtableTest"/>    
+    </classes>
+  </test> 
+  
+  
+   <test  name="Buttons">
+       <classes>
+      <class name="test.Testingbaba_ButtonTest"/>     
+    </classes>
+  </test> 
+  
+   <test  name="Links" >
+       <classes>
+      <class name="test.Testingbaba_linksTest"/>   
+    </classes>
+  </test> 
+  
+  <test  name="Uploadfile">
+       <classes>
+      <class name="test.Testingbaba_UploadfileTest"/>     
+    </classes>
+  </test> 
+  
+  <test  name="Browser_Windows">
+       <classes>
+      <class name="test.Testingbaba_browserwindowTest"/>     
+    </classes>
+  </test> 
+  
+  <test  name="Alarts">
+       <classes>
+      <class name="test.Testingbaba_alartTest"/>     
+    </classes>
+  </test> 
+  
+   <test  name="Frame">
+       <classes>
+      <class name="test.Testingbaba_FrameTest"/>     
+    </classes>
+  </test> 
+  
+  <test  name="NestedFrame">
+       <classes>
+      <class name="test.Testingbaba_FrameTest"/>   
+    </classes>
+  </test> 
+  
+  <test  name="Modal_Dialoges">
+       <classes>
+      <class name="test.Testingbaba_ModalDilogsTest"/>   
+    </classes>
+  </test> 
+  
+</suite> <!-- Suite -->
