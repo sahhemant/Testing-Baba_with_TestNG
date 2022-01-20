@@ -12,7 +12,7 @@ import excelutility.Excelutility;
 
 public class Testingbaba_Webtablepage extends Baseliabary{
 
-	String path="C:\\Users\\yogesh\\git\\repository\\New_Automation_Using_TestNG_Framework\\testresult\\namedata.xlsx";
+	String path="C:\\Users\\yogesh\\git\\TestingBaba_Testng\\New_Automation_Using_TestNG_Framework\\testresult\\namedata.xlsx";
 	
 	public Testingbaba_Webtablepage()
 	{

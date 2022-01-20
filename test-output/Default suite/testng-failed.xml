@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.Testingbaba_CheckboxTest">
+      <class name="test.Testingbaba_AutoCompleteTest">
         <methods>
-          <include name="teardown"/>
-          <include name="getverifiedcheckboxdata"/>
           <include name="getlaunch_testingbabaUrl"/>
+          <include name="teardown"/>
+          <include name="clickonautocompletebtn"/>
           <include name="resultanalysis"/>
         </methods>
-      </class> <!-- test.Testingbaba_CheckboxTest -->
+      </class> <!-- test.Testingbaba_AutoCompleteTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

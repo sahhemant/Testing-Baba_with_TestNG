@@ -9,7 +9,7 @@ import baseliabary.Baseliabary;
 
 public class Testingbaba_Uploadfilepage extends Baseliabary {
 
-	String path="C:\\Users\\yogesh\\git\\repository\\New_Automation_Using_TestNG_Framework\\testdata\\bora.pdf";
+	String path="C:\\Users\\yogesh\\git\\TestingBaba_Testng\\New_Automation_Using_TestNG_Framework\\testdata\\bora.pdf";
 	public Testingbaba_Uploadfilepage()
 	{
 		PageFactory.initElements(driver, this);

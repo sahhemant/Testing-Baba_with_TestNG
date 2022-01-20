@@ -41,8 +41,13 @@ public class Applicationutility extends Baseliabary {
 	public static void click(WebElement ele)
 	{
 		Actions act=new Actions(driver);
-		act.click(ele).perform();;
+		act.click(ele).perform();
     }
+	public static void mouseover(WebElement ele)
+	{
+		Actions act=new Actions(driver);
+		act.moveToElement(ele).perform();
+	}
 	public static void changewindow(int tabno)
 	{
 		Set<String> dd = driver.getWindowHandles();

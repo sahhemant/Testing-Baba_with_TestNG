@@ -5,7 +5,7 @@ import java.util.Properties;
 
 public class ReadCheckboxdata {
 
-	static String path="C:\\Users\\yogesh\\git\\repository\\New_Automation_Using_TestNG_Framework\\testdata\\checkbox.properties";
+	static String path="C:\\Users\\yogesh\\git\\TestingBaba_Testng\\New_Automation_Using_TestNG_Framework\\testdata\\checkbox.properties";
 	public static String getReadproperty(String key)
 	{
 		String value="";

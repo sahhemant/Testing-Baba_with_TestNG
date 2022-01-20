@@ -23,16 +23,14 @@ public class Testingbaba_ModalDilogspage extends Baseliabary {
 	   private WebElement modeldilogsbtn;
 	   @FindBy(xpath="//*[@id=\"tab_15\"]/div/button[1]")
 	   private WebElement smallmodelbtn;
-	   @FindBy(xpath="//*[@id=\"exampleModal1\"]/div/div/div[2]")
-	   private WebElement smallmodelbtntext;
+	  
 	   @FindBy(xpath="//*[@id=\"exampleModal1\"]/div/div/div[3]/button")
 	   private WebElement smallmodelclosebtn;
 	 
 	   
 	   @FindBy(xpath="//*[@id=\"tab_15\"]/div/button[2]")
 	   private WebElement largemodelbtn;
-	   @FindBy(xpath="//*[@id=\"exampleModal2\"]/div/div/div[2]")
-	   private WebElement largemodelbtntext;
+	  
 	   @FindBy(xpath="//*[@id=\"exampleModal2\"]/div/div/div[3]/button")
 	   private WebElement largemodelclosebtn;
 	   
@@ -52,15 +50,16 @@ public class Testingbaba_ModalDilogspage extends Baseliabary {
 	   public void clickonsmallmodelbtn()
 		{
 		 Applicationutility.clickme(smallmodelbtn);	
-		 String data=driver.switchTo().alert().getText();
-		 System.out.println(data);
-		 driver.switchTo().alert().dismiss();
+		
+		 Applicationutility.clickme(smallmodelclosebtn);	
+		
 		}
 		
 	   public void clickonlargemodelbtnbtn()
 		{
-		   Applicationutility.clickme(largemodelbtn);	
-			 largemodelclosebtn.click();
+		   Applicationutility.clickme(largemodelbtn);
+		 
+		   Applicationutility.clickme(largemodelclosebtn);
 		}
 		
 }

@@ -5,7 +5,7 @@ import java.util.Properties;
 
 public class Propertyutility {
 
-	static String path="C:\\Users\\yogesh\\git\\repository\\New_Automation_Using_TestNG_Framework\\testdata\\config.properties";
+	static String path="C:\\Users\\yogesh\\git\\TestingBaba_Testng\\New_Automation_Using_TestNG_Framework\\testdata\\config.properties";
 	public static String getReadproperty(String key)
 	{
 		String value="";

@@ -1,8 +1,9 @@
 package pages;
 
+import org.testng.AssertJUnit;
 import java.util.ArrayList;
+import java.util.List;
 
-import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -13,9 +14,8 @@ import propertyutility.Propertyutility;
 
 public class Testingbaba_TextBoxpage extends Baseliabary {
 
-	ArrayList<String> Expected=new ArrayList<String>();
+	ArrayList<String> Expected=null;
 	
-	ArrayList<String>Actual=new ArrayList<String>();
 	public Testingbaba_TextBoxpage()
 	{
 		PageFactory.initElements(driver, this);
@@ -25,7 +25,7 @@ public class Testingbaba_TextBoxpage extends Baseliabary {
     @FindBy(xpath="//*[text()='Practice']")
     private WebElement practiceform;
     
-    @FindBy(xpath="//*[@id=\"elements-accordion\"]/div[1]/div[1]/h2/button")
+    @FindBy(xpath="//*[@data-target=\"#elements\"]")
 	private WebElement Elements;
     
 	@FindBy(xpath="//*[text()='text box']")
@@ -40,8 +40,9 @@ public class Testingbaba_TextBoxpage extends Baseliabary {
 	private WebElement permanentaddress;
 	@FindBy(xpath="//*[@id=\"tab_1\"]/div/div[1]/form/input[3]")
 	private WebElement submitbtn;
+	
 	@FindBy(xpath="//*[@class=\"col-md-6 mt-5\"]/label")
-	private ArrayList<WebElement> tabledata;
+	private List<WebElement> tabledata;
 		   
 		public void clickonclosebtn()
 		{
@@ -64,7 +65,7 @@ public class Testingbaba_TextBoxpage extends Baseliabary {
 	}
 	public void Filltaxboxdetails()
 	{
-		
+		Expected=new ArrayList<String>();
 		Expected.add(Propertyutility.getReadproperty("name"));
 		Expected.add(Propertyutility.getReadproperty("email"));
 		Expected.add(Propertyutility.getReadproperty("currentadd"));
@@ -80,14 +81,14 @@ public class Testingbaba_TextBoxpage extends Baseliabary {
 		fullemail.sendKeys(Propertyutility.getReadproperty("email"));
 		currentaddress.sendKeys(Propertyutility.getReadproperty("currentadd"));
 		permanentaddress.sendKeys(Propertyutility.getReadproperty("permanentadd"));
-		submitbtn.click();
-		*/
+		submitbtn.click();*/
+		
 	}
 	public void getvarifytextboxdata()
 	{
 		try
 		{
-			
+			ArrayList<String>Actual=new ArrayList<String>();
 			Actual.add(tabledata.get(1).getText());
 			Actual.add(tabledata.get(3).getText());
 			Actual.add(tabledata.get(5).getText());
@@ -97,7 +98,7 @@ public class Testingbaba_TextBoxpage extends Baseliabary {
 			{
 				for(String dd1:Actual)
 				{
-					Assert.assertEquals(dd, dd1);
+					AssertJUnit.assertEquals(dd, dd1);
 					Actual.remove(dd1);
 					break;
 				}
