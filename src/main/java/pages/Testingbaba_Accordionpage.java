@@ -7,9 +7,9 @@ import org.openqa.selenium.support.PageFactory;
 import applicationutility.Applicationutility;
 import baseliabary.Baseliabary;
 
-public class Testingbaba_Widgetspage extends Baseliabary {
+public class Testingbaba_Accordionpage extends Baseliabary {
 
-	public Testingbaba_Widgetspage()
+	public Testingbaba_Accordionpage()
 	{
 		PageFactory.initElements(driver, this);
 	}

@@ -4,9 +4,11 @@ import java.awt.Robot;
 import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Set;
 
+import org.apache.poi.hpsf.Date;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -78,4 +80,21 @@ public class Applicationutility extends Baseliabary {
 			System.out.println("error in uploadfile" + e);
 		}
 	}
+	public static String datepick()
+	{
+		String date;
+		SimpleDateFormat df= new SimpleDateFormat("dd-MM-yyyy");
+		Date db=new Date();
+		date=df.format(db);
+		return date;
+	}
+	public static String datepicktime()
+	{
+		String Date1;
+		SimpleDateFormat df=new SimpleDateFormat("dd-mm-yyyy hh:mm");
+		Date db=new Date();
+		Date1=df.format(db);
+		return Date1;
+}
+	
 }

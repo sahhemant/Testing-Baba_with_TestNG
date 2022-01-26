@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\yogesh\AppData\Local\Temp\testng-eclipse-437964547\testng-customsuite.xml</span>
+                    <span>C:\Users\yogesh\AppData\Local\Temp\testng-eclipse-532844810\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -104,7 +104,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="test.Testingbaba_AutoCompleteTest" class="method navigator-link" hash-for-method="clickonautocompletebtn">clickonautocompletebtn</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="test.Testingbaba_DatePickerTest" class="method navigator-link" hash-for-method="clickondatepicker">clickondatepicker</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -122,43 +122,20 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">test.Testingbaba_AutoCompleteTest</span>
+              <span class="class-name">test.Testingbaba_DatePickerTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="clickonautocompletebtn">
-                  </a> <!-- clickonautocompletebtn -->
-                  <span class="method-name">clickonautocompletebtn</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;myInput&quot;]&quot;}
-  (Session info: chrome=97.0.4692.99)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
-System info: host: &apos;DESKTOP-8IRBSSS&apos;, ip: &apos;192.168.110.142&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 96.0.4664.35 (8df3babf8da8f..., userDataDir: C:\Users\yogesh\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:59866}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 90f864ad349c0e2a291f6d09965a451e
-*** Element info: {Using=xpath, value=//*[@id=&quot;myInput&quot;]}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
-	at pages.Testingbaba_AutoCompletepage.clickonmouseover(Testingbaba_AutoCompletepage.java:46)
-	at test.Testingbaba_AutoCompleteTest.clickonautocompletebtn(Testingbaba_AutoCompleteTest.java:26)
+                  <a name="clickondatepicker">
+                  </a> <!-- clickondatepicker -->
+                  <span class="method-name">clickondatepicker</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Cannot format given Object as a Date
+	at java.base/java.text.DateFormat.format(DateFormat.java:339)
+	at java.base/java.text.Format.format(Format.java:159)
+	at applicationutility.Applicationutility.datepick(Applicationutility.java:88)
+	at pages.Testingbaba_DatePickerpage.date(Testingbaba_DatePickerpage.java:44)
+	at test.Testingbaba_DatePickerTest.clickondatepicker(Testingbaba_DatePickerTest.java:23)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -196,7 +173,7 @@ Session ID: 90f864ad349c0e2a291f6d09965a451e
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\yogesh\AppData\Local\Temp\testng-eclipse-437964547\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\yogesh\AppData\Local\Temp\testng-eclipse-532844810\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -205,7 +182,7 @@ Session ID: 90f864ad349c0e2a291f6d09965a451e
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;test.Testingbaba_AutoCompleteTest&quot;/&gt;
+      &lt;class name=&quot;test.Testingbaba_DatePickerTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -247,14 +224,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'clickonautocompletebtn')
-data.setCell(0, 2, 'test.Testingbaba_AutoCompleteTest')
-data.setCell(0, 3, 12056);
+data.setCell(0, 1, 'clickondatepicker')
+data.setCell(0, 2, 'test.Testingbaba_DatePickerTest')
+data.setCell(0, 3, 221);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 12 seconds</span>
+              <span class="suite-total-time">Total running time: 221 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -280,7 +257,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">test.Testingbaba_AutoCompleteTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">test.Testingbaba_DatePickerTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">getlaunch_testingbabaUrl</span>
                 <span class="method-start">0 ms</span>
@@ -288,16 +265,16 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">clickonautocompletebtn</span>
-                <span class="method-start">11313 ms</span>
+                <span class="method-name">clickondatepicker</span>
+                <span class="method-start">8786 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">resultanalysis([TestResult name=clickonautocompletebtn status=FAILURE method=Testingbaba_AutoCompleteTest.clickonau...)</span>
-                <span class="method-start">23379 ms</span>
+                <span class="method-name">resultanalysis([TestResult name=clickondatepicker status=FAILURE method=Testingbaba_DatePickerTest.clickondatepicke...)</span>
+                <span class="method-start">9011 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">23554 ms</span>
+                <span class="method-start">9280 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

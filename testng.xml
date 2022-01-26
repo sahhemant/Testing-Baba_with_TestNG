@@ -87,9 +87,40 @@
     </classes>
   </test> 
   
+  <test  name="Accordion">
+       <classes>
+      <class name="test.Testingbaba_AccordionTest"/>   
+    </classes>
+  </test> 
+  
+   <test  name="AutoComplete">
+       <classes>
+      <class name="test.Testingbaba_AutoCompleteTest"/>   
+    </classes>
+  </test> 
+  
+  <test  name="Progessbar">
+       <classes>
+      <class name="test.Testingbaba_ProgessbarTest"/>   
+    </classes>
+  </test> 
+  
+  <test  name="Tooltip">
+       <classes>
+      <class name="test.Testingbaba_TooltipTest"/>   
+    </classes>
+  </test> 
+  
+  
    <test  name="Select_Menu">
        <classes>
       <class name="test.Testingbaba_SelectMenuTest"/>   
+    </classes>
+  </test> 
+  
+  <test  name="DatePicker">
+       <classes>
+      <class name="test.Testingbaba_DatePickerTest"/>   
     </classes>
   </test> 
   

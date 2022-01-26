@@ -25,12 +25,12 @@ public class Testingbaba_AutoCompletepage extends Baseliabary {
     private WebElement widgets;
     @FindBy(xpath="//*[text()='auto complete']")
     private WebElement autocompletebtn;
+  
+    @FindBy(xpath="//*[@id=\"tab_17\"]/div/iframe")
+    private WebElement enterframebtn;
     @FindBy(xpath="//*[@id=\"myInput\"]")
     private WebElement clickinfill;
-
-
-
-    
+  
     public void clickonclosebtn()
    	{
    	Applicationutility.clickme(closebtn);
@@ -39,16 +39,14 @@ public class Testingbaba_AutoCompletepage extends Baseliabary {
 	Applicationutility.clickme(autocompletebtn);
 }
    
-    	 public void clickonmouseover() throws InterruptedException 
+    	 public void clickonmouseover() 
  		{	
-    		  
-    		    Thread.sleep(2000);
-    		    clickinfill.click();
+    		    driver.switchTo().frame(enterframebtn);
     		    clickinfill.sendKeys("india");
     		    clickinfill.sendKeys(Keys.ARROW_DOWN);
     		    clickinfill.sendKeys(Keys.ENTER);
+    		    driver.switchTo().defaultContent();
     		    
-	    		
  		}
     	
 }

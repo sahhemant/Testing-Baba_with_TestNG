@@ -1,13 +1,10 @@
 package test;
 
-
-
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import baseliabary.Baseliabary;
 import pages.Testingbaba_AutoCompletepage;
-
 
 public class Testingbaba_AutoCompleteTest extends Baseliabary {
 
@@ -21,7 +18,7 @@ public class Testingbaba_AutoCompleteTest extends Baseliabary {
 		ob.clickonclosebtn();
 }
 	@Test(priority = 0)
-	public void clickonautocompletebtn() throws  InterruptedException
+	public void clickonautocompletebtn() 
 	{
 		ob.clickonmouseover();
 	}
